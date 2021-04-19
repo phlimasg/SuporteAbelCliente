@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ticketListar">
+    <fragment
+        android:id="@+id/ticketCriar"
+        android:name="br.edu.lasalle.suporteabelcliente.view.TicketCriar"
+        android:label="ticket_criar_fragment"
+        tools:layout="@layout/ticket_criar_fragment" >
+        <action
+            android:id="@+id/action_ticketCriar_to_ticketListar"
+            app:destination="@id/ticketListar" />
+    </fragment>
+    <fragment
+        android:id="@+id/ticketListar"
+        android:name="br.edu.lasalle.suporteabelcliente.view.TicketListar"
+        android:label="ticket_listar_fragment"
+        tools:layout="@layout/ticket_listar_fragment" >
+        <action
+            android:id="@+id/action_ticketListar_to_ticketCriar"
+            app:destination="@id/ticketCriar" />
+    </fragment>
+</navigation>

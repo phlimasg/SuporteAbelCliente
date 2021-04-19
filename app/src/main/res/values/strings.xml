@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Suporte Abel - Cliente</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="login_btn">Faça o Login</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_ticket">Novo Ticket:</string>
+    <string name="add_ticket_description">Descreva o problema:</string>
+    <string name="add_ticket_id">ticket_id</string>
+</resources>

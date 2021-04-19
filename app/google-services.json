@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1047469995393",
+    "project_id": "suporteabelappclient-b75be",
+    "storage_bucket": "suporteabelappclient-b75be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047469995393:android:43ff2e1b0ceeb8657aa480",
+        "android_client_info": {
+          "package_name": "br.edu.lasalle.suporteabelcliente"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047469995393-ppbnh8uj669l03kpc3a5dtmls3c9hgik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3_-o_Kx2blmjy9VS3af2srbN8AnVu-O8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047469995393-ppbnh8uj669l03kpc3a5dtmls3c9hgik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
