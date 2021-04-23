@@ -20,6 +20,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.ktx.getValue
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -54,15 +55,20 @@ class TicketListar : Fragment() {
         if(user?.uid != null){
             val fb = database.getReference("/tickets").child(user.uid).get().addOnSuccessListener {
                 for (data in it.children){
-                    val id = data.child("stringResourceId").getValue().toString().toInt()
+                   /* val id = data.child("stringResourceId").getValue().toString().toInt()
                     val email = data.child("email").getValue().toString()
                     val problema = data.child("problema").getValue().toString()
                     val latitude = data.child("latitude").getValue().toString()
                     val longitude = data.child("longitude").getValue().toString()
                     val status = data.child("status").getValue().toString()
-                    var fbTicket: Ticket = Ticket(id,email, problema,latitude,longitude,status)
-                    tickets.add(fbTicket)
-                    Log.i("firebase", "Got value ${fbTicket}")
+                    var fbTicket: Ticket = Ticket(id,email, problema,latitude,longitude,status)*/
+                    val ticket = data.getValue<Ticket>()
+                    if(ticket != null){
+                        tickets.add(ticket)
+                        Log.i("firebase", "Got value ${data}")
+                    }
+
+
                     //Log.i("firebase", "Got value ${data.child("stringResourceId").getValue()}")
                 }
 

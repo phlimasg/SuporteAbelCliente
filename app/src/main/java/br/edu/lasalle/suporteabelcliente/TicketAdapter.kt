@@ -27,7 +27,7 @@ class TicketAdapter(
     override fun onBindViewHolder(holder: TicketViewHolder, position: Int) {
         val item = dataset[position]
         //holder.status.text = context.resources.getString(item.stringResourceId)
-        holder.ticket_id.text = context.resources.getString(item.stringResourceId)
+        holder.ticket_id.text = context.resources.getString(item.getId())
         //holder.problema.text = context.resources.getString(item.stringResourceId)
     }
 
