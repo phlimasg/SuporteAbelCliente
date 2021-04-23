@@ -62,7 +62,8 @@ class TicketCriar : Fragment() {
 
             if(user?.uid != null){
                 val problema = view.findViewById<EditText>(R.id.input_problema).text.toString()
-                val ticket = Ticket((Math.random() * 2147483647).toInt(), user.email, problema, "-111111","+111111","Em Aberto")
+                val ticket : Ticket = Ticket( )
+                //val ticket : Ticket = Ticket((Math.random() * 2147483647).toInt(), user.email, problema, "-111111","+111111","Em Aberto")
                 val fb = database.getReference("/tickets").child(user.uid).child(uuid.toString())
 
                 fb.setValue(ticket)
